@@ -1,0 +1,32 @@
+Package: co2meter
+Type: Package
+Title: Retrieve Readings from CO2Mini (Model RAD-0301) Desktop CO2 Monitor
+Version: 0.1.0
+Date: 2021-02-21
+Authors@R: c(
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("Oleg", "Bulatov", email = "oleg@bulatov.me", role = "aut",
+           comment = "co2mon <https://github.com/dmage/co2mon>"),
+    person("Oleg", "Bulatov", email = "oleg@bulatov.me", role = "aut",
+           comment = "HIDAPI - Multi-Platform library for communication 
+           with HID devices. <https://github.com/libusb/hidapi>")
+  )
+Maintainer: Bob Rudis <bob@rud.is>
+Description: The CO2Mini (model RAD-0301) desktop CO2 monitor from CO2meter.com
+    is a low-cost, fairly accurate personal CO2 environment monitor that
+    can work standalone (via a USB power brick) or be attacked to a computer
+    where it can be both powered and act as a datalogger. Tools are provided
+    to retrieve temperature and CO2 readings from such devices.
+URL: https://git.rud.is/hrbrmstr/co2meter
+BugReports: https://git.rud.is/hrbrmstr/co2meter/issues
+RequiresCompilation: yes
+SystemRequirements: macOS, a RAD-0301 sensor
+Encoding: UTF-8
+License: GPL-3
+Suggests: 
+    covr, tinytest
+Depends: 
+    R (>= 3.6.0)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
