@@ -15,6 +15,10 @@ hrbrpkghelpr::stinking_badges()
 hrbrpkghelpr::yank_title_and_description()
 ```
 
+### NOTE
+
+For the moment, this is hard-wired for macOS. File an issue if you want linux support. For Windows users, please use a better operating system.
+
 ## What's Inside The Tin
 
 The following functions are implemented:
