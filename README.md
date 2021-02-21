@@ -38,6 +38,12 @@ The following functions are implemented:
 ## Installation
 
 ``` r
+remotes::install_git("https://git.rud.is/hrbrmstr/co2meter.git")
+# or
+remotes::install_gitlab("hrbrmstr/co2meter")
+# or
+remotes::install_bitbucket("hrbrmstr/co2meter")
+# or
 remotes::install_github("hrbrmstr/co2meter")
 ```
 
@@ -59,24 +65,24 @@ init_co2_meter_dev()
 
 print(read_co2()) # this can take a few seconds
 ## $temp
-## [1] 20.4125
+## [1] 20.475
 ## 
 ## $co2
-## [1] 594
+## [1] 667
 
 print(read_co2()) # this can take a few seconds
 ## $temp
-## [1] 20.4125
+## [1] 20.475
 ## 
 ## $co2
-## [1] 594
+## [1] 667
 
 print(read_co2()) # this can take a few seconds
 ## $temp
-## [1] 20.4125
+## [1] 20.475
 ## 
 ## $co2
-## [1] 597
+## [1] 668
 
 close_dev()
 ```
